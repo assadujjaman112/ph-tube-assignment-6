@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tube</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Navbar -->
-    <section>
+      <!-- Navbar -->
+      <section>
         <div class="flex justify-between px-5 md:px-20 py-12">
-            <img src="./images/Logo.png" alt="">
-            <button class="btn">Sort by view</button>
-            <button class="btn bg-[#FF1F3D] text-white">Blog</button>
+          <img src="./images/Logo.png" alt="" />
+          <button onclick="sortVideo ()" id="button" class="btn">
+            Sort by view
+          </button>
+          <button id="blog-btn" class="btn bg-[#FF1F3D] text-white" onclick="blogs()">Blog</button>
         </div>
-        <hr class="w-[90%] mx-auto text-[#17171733]">
-    </section>
+        <hr class="w-[90%] mx-auto text-[#17171733]" />
+      </section>
     </header>
     <main class="w-[90%] mx-auto">
-        <section id="btn-container" class="my-12 flex justify-center gap-5">
-            <!-- Buttons -->
-            
-        </section>
-        <section id="content-container" class="w-[90%]">
-        </section>
+      <section id="btn-container" class="my-12 flex justify-center gap-5">
+        <!-- Buttons -->
+      </section>
+      <section id="content-container" class="w-[90%]"></section>
 
-        <!-- video section -->
-        <section>
-            <div id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                <!-- <div class="card  bg-base-100 shadow-xl">
+      <!-- video section -->
+      <section>
+        <div
+          id="video-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
+          <!-- <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Shoes!</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                   </div> -->
-            </div>
-        </section>
+        </div>
+        <div
+          id="drawing-container"
+          class="flex justify-center items-center"
+        ></div>
+      </section>
     </main>
 
+    
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
